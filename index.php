@@ -1,0 +1,1 @@
+<?php require_once 'db.php'; require_login(); $role=$_SESSION['user']['role']; header('Location: '.($role==='admin'?'admin/dashboard.php':'driver/dashboard.php')); exit; ?>
